@@ -1,0 +1,21 @@
+#include <PRIZM.h>   //Link up the library
+PRIZM samhyde;         //declare object (reference to prizm)
+
+void setup(){  
+  samhyde.PrizmBegin();
+  samhyde.setMotorInvert(2,1);
+  Serial.begin(9600);
+}
+
+void loop(){
+  samhyde.setMotorPowers(50,50);
+  delay(1300);
+
+  samhyde.setMotorPowers(40,60); 
+  delay(1000);
+  
+  samhyde.setMotorPowers(50,50);
+  delay(1000);
+  samhyde.PrizmEnd();
+
+}
