@@ -1,0 +1,20 @@
+#include <PRIZM.h>   //Link up the library
+PRIZM prizm;         //declare object (reference to prizm)
+
+void setup(){  
+  prizm.PrizmBegin();
+  prizm.setMotorInvert(2,1);
+  Serial.begin(9600);
+}
+
+void loop(){
+  prizm.setMotorSpeeds(360,360);
+  delay(1300);
+
+  prizm.setMotorSpeeds(40,60); 
+  delay(1000);
+  
+  prizm.setMotorSpeeds(50,50);
+  delay(1000);
+  prizm.PrizmEnd();
+
