@@ -1,0 +1,78 @@
+//Three types of logic
+
+//Logic 1 - Single IF
+
+//Syntax
+
+if(question){
+  //Code that runs is TRUE
+}
+//Example - If it is raining outside , wear a jacket. 
+if(isRaining == true){    //==,<,>,=< =>;Compare two things
+  slater.putJacketOn();
+
+
+
+
+
+//Logic 2 - IF/ELSE
+//Syntax
+
+if(question){
+  //Code that runs if True     
+}else{
+  //Code that runs if False
+}
+  //Example
+if(isRaining == true){
+  slater.wearJackets(2);
+}else{
+  slater.wearJackets(1)
+}
+
+
+
+  //Logic 3 - IF/ElSEIF/ELSE
+  //Syntax - Use when questions are "linked"
+if(Question1){
+    //Code to run if question 1 is True
+} else if (question2){
+    //Code to run if question 2 is True
+  }else if (question3){
+    //Code to run if question 3 is True
+  }else if (question4){
+    //Code to run if question 4 is True
+  } else {
+    //Code to run by default (catch)
+  }
+
+
+//Logic 4 - Nested IF's
+//Syntax
+if(question1){
+  //Code runs if Q1 is TRUE
+  if(question2){
+    //Code runs if Q1 AND Q2 are TRUE
+    if(question3)}
+    //Code runs if Q1,Q2, AND Q3 are TRUE
+  }
+}
+OR
+
+
+if(question1){
+  //Code rus if Q1 is TRUE
+  if(question2){
+    //Code runs if Q1 AND Q2 are TRUE
+    if(question3){
+      //Code runs is Q1, Q2 AND Q3 are TRUE
+    }
+  } else if (question 4){
+    //Code runs if Q1 is TRUE, Q2 is FALSE and Q4 is True
+  }else{
+    //Code runs if Q1 is TRUE , Q@ is FALSE and Q4 is FALSE
+    
+   
+    }
+  }
+}
