@@ -1,0 +1,13 @@
+#include <PRIZM.h>   
+PRIZM prizm;   
+     
+void setup(){  
+  prizm.PrizmBegin();
+  prizm.setMotorInvert(2,1);
+  Serial.begin(9600);
+   
+}
+void loop(){
+int line = prizm.readLineSensor(2);
+if(line == 1);
+else{
